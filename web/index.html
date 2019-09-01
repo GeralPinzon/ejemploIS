@@ -1,20 +1,933 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Principal</title>
-        <link href="css/misEstilos.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <h1 style="background-color:DodgerBlue;">INMOBILIARIA</h1>
-        <a href="./jsp/Persona_crear.jsp"> Registrarse </a>
-        <br>
-        <br>
-        <img src="./Img/casa.jpg" alt="Casa"/>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Homes Template">
+    <meta name="keywords" content="Homes, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InAlpes | Inmobiliaria</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <font size="5" color="white"><img src="img/only-logo.png" alt=""> InAlpes</font>
+                            
+                        </a>
+                    </div>
+                    <ul class="main-menu">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./search.html">Registrarse</a></li>
+                        <li><a href="./about.html">Sobre nosotros</a></li>
+                        <!--<li><a href="./single-property.html">Single Property</a></li>
+                        <li><a href="./blog.html">Blog</a></li>-->
+                        <li><a href="./contact.html">Contactanos</a></li>
+
+                        <li class="top-social">
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                    </ul>
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    <section class="hero-section home-page set-bg" data-setbg="img/bg.jpg">
+        <div class="container hero-text text-white">
+            <h2>Encuentra la proxima</h2>
+            <h1>casa de tus sueños.</h1>
+        </div>
+    </section>
+ 
+    <!-- Filter Search Section End -->
+    <!-- Hotel Room Section Begin -->
+    <section class="instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Inmuebles destacados</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hotel-rooms spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/1.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Casa de estilo rústico con hermoso jardín y terraza.</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a>Santa Bárbara Central</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>299 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>5</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio</p>
+                                <span>$345.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/2.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Casa con un hermoso estilo mediterraneo</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Altos de Menga</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>300 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio</p>
+                                <span>$120.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/3.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Casa con estilo minimalista, amplia y muy luminosa</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Envigado</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>2561 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>11</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>8</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio</p>
+                                <span>$210.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/4.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Casa en estilo colonial, hermoso jardin y vista</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Caobos Salazar</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>561 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>6</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio</p>
+                                <span>$400.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/5.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Casa en estilo cottages, excelente para pasar las vacaciones</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Belén</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>621 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>6</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio</p>
+                                <span>$390.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/6.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Casa con un estilo tudor muy comoda</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Centenario</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>671 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio</p>
+                                <span>$130.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/arriendo1.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Se arrienda casa amplia, con piscina, excelente para vacaciones</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Melgar</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>561 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio Mensual</p>
+                                <span>$3.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/7.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Se arrienda apartamento en venta elegante y amplio</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Los cedros</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>100.0 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>No disponible</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio Mensual</p>
+                                <span>$7.000.000</span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/8.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Arriendo de Apartamento en las colinas</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Ciudad de Alamos</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>700.0 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>No disponible</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio mensual</p>
+                                <span>$1.900.000 </span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/9.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Venta de Apartamento elegante</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Chico</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>700.0 m<sup>2</sup></span>
+                                    </div>
+                                    <div class="beds">
+                                        <p>Camas</p>
+                                        <img src="img/rooms/bed.png" alt="">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>No disponible</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio mensual</p>
+                                <span>$899.900.000 </span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/10.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Arriendo oficina moderna</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Espartillal</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>700.0 m<sup>2</sup></span>
+                                    </div>
+                                    
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio venta y arriendo</p>
+                                <span>$8.900.000 </span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-items">
+                        <div class="room-img set-bg" data-setbg="img/rooms/11.jpg">
+                            <a href="#" class="room-content">
+                                <i class="flaticon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="room-text">
+                            <div class="room-details">
+                                <div class="room-title">
+                                    <h5>Venta oficina amplia</h5>
+                                    <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                    <a >Rosales</a>
+                                </div>
+                            </div>
+                            <div class="room-features">
+                                <div class="room-info">
+                                    <div class="size">
+                                        <p>Medidas</p>
+                                        <img src="img/rooms/size.png" alt="">
+                                        <i class="flaticon-bath"></i>
+                                        <span>900.0 m<sup>2</sup></span>
+                                    </div>
+                                    
+                                    <div class="baths">
+                                        <p>Baños</p>
+                                        <img src="img/rooms/bath.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="garage">
+                                        <p>Garaje</p>
+                                        <img src="img/rooms/garage.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <p>Precio venta y arriendo</p>
+                                <span>$23.900.000 </span>
+                            </div>
+                            <a href="#" class="site-btn btn-line">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hotel Room Section End -->
+    <!-- Popular Room Section Begin -->
+    <section class="popular-room set-bg p-in" data-setbg="img/bg-2.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                    <div class="slider-active owl-carousel">
+                        <div class="popular-items">
+                            <div class="popular-room-text">
+                                <div class="popular-room-details">
+                                    <div class="popular-room-title">
+                                        <h5>Amplia casa moderna y elegante</h5>
+                                        <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                      <a >Arboledas</a>
+                                    </div>
+                                </div>
+                                <div class="popular-room-description">
+                                    <div class="popular-room-desc">
+                                        <p>Grandes ventanales que permitan la entrada de luz natural para crear ambientes interiores luminosos, amplios y conectados con la naturaleza. Formas geométricas básicas y simples enriquecen la arquitectura.</p>
+                                    </div>
+                                </div>
+                                <div class="popular-room-features">
+                                    <div class="popular-room-info">
+                                        <div class="size">
+                                            <p>Medidas</p>
+                                            <img src="img/rooms/size.png" alt="">
+                                            <i class="flaticon-bath"></i>
+                                            <span>300 m<sup>2</sup></span>
+                                        </div>
+                                        <div class="beds">
+                                            <p>Camas</p>
+                                            <img src="img/rooms/bed.png" alt="">
+                                            <span>8</span>
+                                        </div>
+                                        <div class="baths">
+                                            <p>Baños</p>
+                                            <img src="img/rooms/bath.png" alt="">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="garage">
+                                            <p>Garaje</p>
+                                            <img src="img/rooms/garage.png" alt="">
+                                            <span>2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-room-price">
+                                    <p>Precio</p>
+                                    <span>$290.000.000</span>
+                                    <span class="deal">Mejor venta</span>
+                                </div>
+                                <a href="#" class="site-btn btn-line">Ver</a>
+                            </div>
+                        </div>
+                        <div class="popular-items">
+                            <div class="popular-room-text">
+                                <div class="popular-room-details">
+                                    <div class="popular-room-title">
+                                        <h5>Casa mediana para pequeñas familias</h5>
+                                        <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                       <a >Bulevar</a>
+                                    </div>
+                                </div>
+                                <div class="popular-room-description">
+                                    <div class="popular-room-desc">
+                                        <p>Una casa de los años ’60 que fue remodelada para adaptarse a las necesidades actuales. Está estructurada en U con un patio interior donde confluyen todas las ventanas. Las múltiples aberturas permiten integrar el interior con el exterior, aprovechar la vista y asegurar el ingreso de luz y sol.</p>
+                                    </div>
+                                </div>
+                                <div class="popular-room-features">
+                                    <div class="popular-room-info">
+                                        <div class="size">
+                                            <p>Medidas</p>
+                                            <img src="img/rooms/size.png" alt="">
+                                            <i class="flaticon-bath"></i>
+                                            <span>200 m<sup>2</sup></span>
+                                        </div>
+                                        <div class="beds">
+                                            <p>Camas</p>
+                                            <img src="img/rooms/bed.png" alt="">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="baths">
+                                            <p>Baños</p>
+                                            <img src="img/rooms/bath.png" alt="">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="garage">
+                                            <p>Garaje</p>
+                                            <img src="img/rooms/garage.png" alt="">
+                                            <span>2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-room-price">
+                                    <p>Precio</p>
+                                    <span>$90.000.000</span>
+                                    <span class="deal">Mejor publicacion</span>
+                                </div>
+                                <a href="#" class="site-btn btn-line">Ver</a>
+                            </div>
+                        </div>
+                        <div class="popular-items">
+                            <div class="popular-room-text">
+                                <div class="popular-room-details">
+                                    <div class="popular-room-title">
+                                        <h5>Casa contemporanea excelente para vacaciones</h5>
+                                        <a href="#"><i class="flaticon-placeholder"></i> <span>Lugar</span></a>
+                                       <a >Villa hermosa</a>
+                                    </div>
+                                </div>
+                                <div class="popular-room-description">
+                                    <div class="popular-room-desc">
+                                        <p>Una casa remodelada en la que se estructuraron los espacios en distintos cubos distribuidos en cascada. Cada volumen está un poco más elevado que el anterior, para que todos reciban abundante luz natural. Este diseño no sólo apovecha mejor el terreno sino que también ofrece accesos simples, fáciles y prácticos.</p>
+                                    </div>
+                                </div>
+                                <div class="popular-room-features">
+                                    <div class="popular-room-info">
+                                        <div class="size">
+                                            <p>Medidas</p>
+                                            <img src="img/rooms/size.png" alt="">
+                                            <i class="flaticon-bath"></i>
+                                            <span>301 m<sup>2</sup></span>
+                                        </div>
+                                        <div class="beds">
+                                            <p>Camas</p>
+                                            <img src="img/rooms/bed.png" alt="">
+                                            <span>5</span>
+                                        </div>
+                                        <div class="baths">
+                                            <p>Baños</p>
+                                            <img src="img/rooms/bath.png" alt="">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="garage">
+                                            <p>Garaje</p>
+                                            <img src="img/rooms/garage.png" alt="">
+                                            <span>No tiene</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-room-price">
+                                    <p>Precio</p>
+                                    <span>$300.000.000</span>
+                                    <span class="deal">Mejor publicacion </span>
+                                </div>
+                                <a href="#" class="site-btn btn-line">Ver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Room Section End -->
+    <!-- Newslatter Section Begin -->
+    <section class="newslatter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="newslatter-text">
+                        <img src="img/message.png" alt="">
+                        <h4>Únase a nuestro correo para obtener actualizaciones semanales sobre<br>nuestras ofertas exclusivas.</h4>
+                        <form>
+                            <input type="text" placeholder="Email address">
+                            <button type="submit" class="site-btn news-btn">Suscribete!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newslatter Section End -->
+    <!-- Servies Section Begin -->
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-side">
+                        <h2><span>¿Por qué escoger InAlpes?</span><br>Porque somos los mejores en<br> negocios.</h2>
+                        <p>Nos dedicamos a facilitar a nuestros clientes la compra, venta y arriendo de bienes inmuebles como casas, apartamentos y oficinas. Queremos dar los mejores estándares de satisfacción al cliente en el sector inmobiliario, a través de nuestros servicios innovadores.</p>                     
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-side">
+                        <ul>
+                            <li><img src="img/check.png" alt="">Brindamos seguridad a nuestros clientes.</li>
+                            <li><img src="img/check.png" alt="">Garantizamos que el personal vinculado con InAlpes es competente.</li>
+                            <li><img src="img/check.png" alt="">Trabajamos con profesionalidad, integridad moral y respeto hacia las personas.</li>
+                            <li><img src="img/check.png" alt="">Desarrollamos constantemente estrategias innovadoras de ventas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Servies Section End -->
+    <section class="instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Siguenos en instagram @InAlpes</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <!-- Rooms Pic Section Begin-->
+        <div class="room-pic">
+            <div class="container-fluid">
+                <div class="row sp-40">
+                    <img src="img/room-pic/1.jpg" alt="">
+                    <img src="img/room-pic/2.jpg" alt="">
+                    <img src="img/room-pic/3.jpg" alt="">
+                    <img src="img/room-pic/4.jpg" alt="">
+                    <img src="img/room-pic/5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Rooms Pic Section End -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center sp-60">
+                    <img src="img/only-logo.png" alt="">
+                </div>
+            </div>
+            <div class="row p-37">
+                <div class="col-lg-4">
+                    <div class="about-footer">
+                        <h5>InAlpes</h5>
+                        <p>Brindamos el mejor servicio a nuestros clientes, contamos con distintas sedes a nivel nacional, una en Medellin, en Cali, y dos en Bogotá.
+                        Sigue nuestras redes y enterate de las mejores ventas en inmuebles</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    
+                </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="footer-address">
+                        <h5>Contactanos</h5>
+                        <ul>
+                            <li><i class="flaticon-placeholder"></i><span>Bogota - Cali - Medellin</span>
+                            </li>
+                            <li><i class="flaticon-envelope"></i><span>InAlpes@gmail.com</span></li>
+                            <li><i class="flaticon-smartphone"></i><span>678-98-76</span></li>
+                        </ul>
+                        <p>Lunes – Viernes: 9 am – 5 pm</p>
+                        <p>Sabados: 9 am – 1pm</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
